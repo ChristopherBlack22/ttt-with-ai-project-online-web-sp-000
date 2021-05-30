@@ -7,7 +7,7 @@ module Players
         input = "5"
       elsif !board.taken?(1)
         "1"
-      elsif !board.taken?
+      elsif !board.taken?(3)
         
       end 
       input
