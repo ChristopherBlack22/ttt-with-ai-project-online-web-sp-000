@@ -9,7 +9,12 @@ module Players
         inout = "1"
       elsif !board.taken?("3")
         input = "3"
-      elsif !board.taken?("7") 
+      elsif !board.taken?("7")
+        input = "7"
+      elsif !board.taken?("9")
+        input = "9"
+      elsif !board.taken?
+      input = 
       end 
       input
     end 
