@@ -2,7 +2,7 @@ module Players
   class Computer < Player
   
     def move(board)
-      if board.
+      "4" unless board.taken?(4)
     end 
   
   end 
