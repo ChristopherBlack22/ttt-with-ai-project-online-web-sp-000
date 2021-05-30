@@ -2,7 +2,15 @@ module Players
   class Computer < Player
   
     def move(board)
-      "4" unless board.taken?(4)
+      input = nil 
+      if !board.taken?(5)
+        input = "5"
+      elsif !board.taken?(1)
+        "1"
+      elsif !board.taken?
+        
+      end 
+      input
     end 
   
   end 
