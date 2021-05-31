@@ -32,11 +32,12 @@ require_relative '../config/environment'
 #start_game
 
 def game_start
-  puts "\nWelcome to Command Line Tic Tac Toe!"
-  puts "\nWhat kind of game will you like to play? Please choose player mode:
-  0 - Computer VS Computer
-  1 - You VS Computer
-  2 - You VS Your friend"
+  puts "Welcome to Tic Tac Toe."
+  puts "What mode would you like to play?"
+  puts "0 - Computer v Computer"
+  puts "1 - You v Computer"
+  puts "2 - You v Friend"
+  puts "Please select a number."
 
   player_mode = gets.strip
 
