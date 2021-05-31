@@ -10,8 +10,11 @@ puts "2 - You v Friend"
 puts "Please select a number."
 mode = gets.strip
 if mode == "0"
-  Game.new(Player::Computer("X"), Player::Computer("O"), 
-if mode == "1"
-  puts "Would you like to go first or second?"
+  Game.new(Players::Computer("X"), Players::Computer("O")) 
+elsif mode == "1"
+  puts "Would you like to go first? Y/N?"
   order = gets.strip
+  if order == "Y"
+    Game.new(Players:Human("X"), Players::Computer("O"))
+  elsif
 end 
