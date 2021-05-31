@@ -13,7 +13,7 @@ puts "1 - You v Computer"
 puts "2 - You v Friend"
 puts "Please select a number."
 mode = gets.strip
-if mode != "0" || 
+if mode != ("0" || "1" || "2")
 
 
 
