@@ -42,7 +42,7 @@ def game_start
   player_mode = gets.strip
 
   if player_mode != ("0" && "1" && "2")
-    start_game
+    game_start
   
   elsif player_mode == "1"
     puts "Do you want to go first? y/n?"
