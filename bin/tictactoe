@@ -13,19 +13,19 @@ def start_game
   if mode != ("0" && "1" && "2")
     start_game
   elsif mode == "0"
-    Game.new(Players::Computer("X"), Players::Computer("O")).play 
+    Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play 
   elsif mode == "1"
     puts "Would you like to go first? Y/N?"
     first = gets.strip
     if first != "Y" && "N"
       start_game
     elsif first == "Y"
-      Game.new(Players:Human("X"), Players::Computer("O")).play
+      Game.new(Players:Human("X").new, Players::Computer("O").new).play
     elsif first == "N"
-      Game.new(Players:Computer("X"), Players::Human("O")).play
+      Game.new(Players:Computer("X").new, Players::Human("O").new).play
     end
   elsif mode == "2"
-    Game.new(Players::Human("X"), Players::Human("O")).play
+    Game.new(Players::Human("X").new, Players::Human("O").new).play
   end   
 end 
 
