@@ -29,37 +29,3 @@ def start_game
   end   
 end 
 
-
-
-end 
-
-
-mode = 
-until select_game == "0" || "1" || "2"
-  select_game
-end
-
-
-while mode != "0" || "1" || "2"
-  puts "0 - Computer v Computer"
-  puts "1 - You v Computer"
-  puts "2 - You v Friend"
-  puts "Please select a number."
-  mode = gets.strip
-if mode == "0"
-  Game.new(Players::Computer("X"), Players::Computer("O")) 
-elsif mode == "1"
-  order = nil 
-  while order != "Y" || "N"
-    puts "Would you like to go first? Y/N?"
-    order = gets.strip
-  end 
-  if order == "Y"
-    Game.new(Players:Human("X"), Players::Computer("O"))
-  elsif order == "N"
-    Game.new(Players::Computer("X"), Players::Human("O"))
-  end 
-
-end 
-
-end 
