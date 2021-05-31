@@ -4,6 +4,7 @@ require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe."
 puts "What mode would you like to play?"
+
 mode = nil
 while mode != "0" || "1" || "2"
   puts "0 - Computer v Computer"
