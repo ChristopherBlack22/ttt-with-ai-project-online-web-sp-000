@@ -3,15 +3,8 @@
 require_relative '../config/environment'
 
 #def start_game
-#  puts "Welcome to Tic Tac Toe."
-#  puts "What mode would you like to play?"
-#  puts "0 - Computer v Computer"
-#  puts "1 - Against Computer"
-#  puts "2 - Against a Friend"
-#  puts "Please select a number..."
-#  mode = gets.strip
-#  if mode != ("0" && "1" && "2")
-#    start_game
+
+
 #  elsif mode == "0"
 #    Game.new(Players::Computer.new("X"), Players::Computer.new("O") ).play 
 #  elsif mode == "1"
@@ -52,7 +45,7 @@ def game_start
     end
 
   elsif player_mode == "0"
-    Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
+    Game.new(Players::Computer.new("X"), Players::Computer.new("O") ).play
 
   elsif player_mode == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
