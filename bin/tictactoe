@@ -34,7 +34,7 @@ def game_start
 
   player_mode = gets.strip
 
-  if player_mode != ("0" && "1" && "2")
+  if player_mode != "0" && player_mode != "1" && player_mode != "2"
     game_start
   
   elsif player_mode == "1"
