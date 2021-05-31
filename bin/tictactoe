@@ -2,9 +2,14 @@
 
 require_relative '../config/environment'
 
-puts "Welcome to Tic Tac Toe"
-puts "How many human players would you like? 0, 1, or 2?"
-input = gets.strip
-if input == "1"
+puts "Welcome to Tic Tac Toe."
+puts "How would you like to play?" 
+puts "0 - Computer v Computer"
+puts "1 - You v Computer"
+puts "2 - You v Friend"
+puts "Please select a number."
+mode = gets.strip
+if mode == "1"
   puts "Would you like to go first or second?"
   order = gets.strip
+end 
