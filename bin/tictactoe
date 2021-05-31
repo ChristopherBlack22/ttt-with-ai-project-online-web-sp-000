@@ -17,11 +17,24 @@ def start_game
     start_game
   elsif mode == "0"
     Game.new(Players::Computer("X"), Players::Computer("O")) 
-    
+  elsif mode == "1"
+    puts "Would you like to go first? Y/N?"
+    first = gets.strip
+    if first != "
+    first = nil 
+    while order != "Y" && "N"
+      puts "Would you like to go first? Y/N?"
+      first = gets.strip
+    end 
+    if first == "Y"
+      Game.new(Players:Human("X"), Players::Computer("O"))
+    elsif first == "N"
+      Game.new(Players:Computer("X"), Players::Human("O"))
+    end
     
   elsif mode == "2"
     Game.new(Players::Human("X"), Players::Human("O"))
-    
+  end   
 end 
 
 
