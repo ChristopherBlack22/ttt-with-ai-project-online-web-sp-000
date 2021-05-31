@@ -2,28 +2,6 @@
 
 require_relative '../config/environment'
 
-#def start_game
-
-
-#  elsif mode == "0"
-#    Game.new(Players::Computer.new("X"), Players::Computer.new("O") ).play 
-#  elsif mode == "1"
-#    puts "Would you like to go first? Y/N?"
-#    first = gets.strip
-#    if first != "Y" && "N"
-#      start_game
-#    elsif first == "Y"
-#      Game.new(Players:Human.new("X"), Players::Computer.new("O") ).play
-#    elsif first == "N"
-#      Game.new(Players:Computer.new("X"), Players::Human.new("O"), Board.new).play
-#    end
-#  elsif mode == "2"
-#    Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
-#  end   
-#end 
-
-#start_game
-
 def game_start
   puts "Welcome to Tic Tac Toe."
   puts "What mode would you like to play?"
@@ -50,7 +28,7 @@ def game_start
   elsif player_mode == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O")).play
   end
-  puts "Would like to play again? [y/ n]"
+  puts "Would like to play again? y/n?"
 
 end
 
