@@ -2,9 +2,19 @@
 
 require_relative '../config/environment'
 
+
+
+
 def select_game
 mode = nil
 order = nil
+
+puts "What mode would you like to play?"
+puts "0 - Computer v Computer"
+puts "1 - You v Computer"
+puts "2 - You v Friend"
+puts "Please select a number."
+
 
 puts "Welcome to Tic Tac Toe."
 puts "What mode would you like to play?"
