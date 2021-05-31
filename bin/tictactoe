@@ -17,7 +17,9 @@ end
 
 puts "Welcome to Tic Tac Toe."
 puts "What mode would you like to play?"
-select_game 
+until select_game == "0" || "1" || "2"
+  select_game
+end
 
 
 while mode != "0" || "1" || "2"
