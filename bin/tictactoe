@@ -17,6 +17,7 @@ end
 
 puts "Welcome to Tic Tac Toe."
 puts "What mode would you like to play?"
+mode = 
 until select_game == "0" || "1" || "2"
   select_game
 end
