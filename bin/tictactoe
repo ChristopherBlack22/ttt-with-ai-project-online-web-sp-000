@@ -2,10 +2,18 @@
 
 require_relative '../config/environment'
 
+def select_game
+mode = nil
+order = nil
+
 puts "Welcome to Tic Tac Toe."
 puts "What mode would you like to play?"
 
-mode = nil
+puts "0 - Computer v Computer"
+puts "1 - You v Computer"
+puts "2 - You v Friend"
+puts "Please select a number."
+
 while mode != "0" || "1" || "2"
   puts "0 - Computer v Computer"
   puts "1 - You v Computer"
@@ -27,4 +35,6 @@ elsif mode == "1"
   end 
 elsif mode == "2"
   Game.new(Players::Human("X"), Players::Human("O"))
+end 
+
 end 
